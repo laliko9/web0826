@@ -107,10 +107,16 @@
         // }
         // 1. {}안에 문장이 1개이면 -> {} 생략
         // const var2 = (a)=> console.log(a);
-        // 2. 매개변수가 1개이면 -> () 생략
-        const var2 = a => {return a;}
-       
 
+        // 2. 매개변수가 1개이면 -> () 생략
+        // const var2 = a => {a;} -> return 하지 않는다.
+        
+        // 3. return 문을 사용하면 -> return 키워드 생략
+        // const var2 = function(a){return a};
+        // const var2 = a => {return a;}
+        const var2 = a => a;
+
+        
         // 정규식(RegExp, Regular Expression)
             //  \n -> 줄바꿈
             // https://www.w3schools.com/jsref/jsref_regexp_newline.asp 
@@ -128,13 +134,16 @@
         // 함수 호출
 /* ---------------------------------------------------------- */
 
-        // 매개 변수 개수보다 적게 인수를 써도 에러는 아니다. 인수가 없는 매개 변수 값은 undefined
+        // 매개 변수 개수보다 적게 인수를 써도 에러는 아니다. 인수가 없는 매개 변수 값은 undefined -> 에러는 아니어도 개수를 맞춰 적용하자!
 
-        document.write(fn(1.1, 5)); // 6.1
-        document.write(var1(2, 5)); //7
+        const x = fn(1.1, 5); // 6.1
+        const y = var1(2, 5); // 7
 
-        // 매개 변수 개수보다 더 많은 인수를 써도 에러는 아니다. 매개 변수 개수 많큼 기록된 인수 순서로 적용된다.
-        document.write(var2("3.", 5));
+        // 매개 변수 개수보다 더 많은 인수를 써도 에러는 아니다. 매개 변수 개수 많큼 기록된 인수 순서로 적용된다. -> 에러는 아니어도 개수를 맞춰 적용하자!
+        const z = var2("3.", 5); // 3.
+
+        // 출력
+        document.write(`x는 ${x} <br>y는 ${y} <br>z는 ${z} <br>`);
 
     </script>
 </body>
