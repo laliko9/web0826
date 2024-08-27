@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+            변수
+                키워드? var, let, const
+           
+            블록 범위 버전(block scoped version)? let, const 
+            전역변수 vs 지역변수
+            재선언, 재할당
+
+            var: 재선언, 재할당 모두 가능
+            let: 재선언, 재할당 모두 가능 단, 재선언은 범위가 달라야 한다.
+            const: 선언 즉시 할당하여야 한다. 단, 재선언은 범위가 달라야 한다.
+        */
+        // 변수의 키워드는? var, let, const
+    
+        // 블록 범위 버전(block scoped version)? let, const
+        // 변수에는 전역변수와 지역변수가 있다.
+        // 재선언 및 재할당
+
+        // 전역변수
+        // var x
+        // x = 1;
+        let x;
+        x = 1;
+        const y = 1;
+
+        console.log("첫 번째 출력", x);
+
+        // 블록 범위
+        {
+            // 지역변수, 재선언 및 재할당
+            // var x;
+            // let x;
+            const x = 3;
+            const y = 2;
+            // x = 1;
+            // x = 2;
+            // y = 2;
+            console.log("두 번째 출력", x);
+        }
+
+        console.log("세 번째 출력", x);
+
+    </script>
+</body>
+
+</html>
