@@ -1,7 +1,7 @@
 React 시작하기
 
 리액트: https://ko.legacy.reactjs.org/
-학습: https://www.w3schools.com/react/react_getstarted.asp 
+학습: https://www.w3schoolsnpm uninstall -g create-react-app.com/react/react_getstarted.asp 
 
 1. Node.js 설치
 -> npx(Node Package eXecute), npm(Node Package Manager) 명령어 입력

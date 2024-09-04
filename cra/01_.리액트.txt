@@ -1,0 +1,11 @@
+Cra(Create React Application )
+
+1.작업 폴더로 이동 
+web0826>cd dra
+web0826>cra>npx create-react-app 프로젝트명 < 앞쪽은 프로젝트명이다  라우터- a 테그 연습 링크 연습을 말한다. link-app 링크 테그 리액트에서 >
+2.명령 프롬프트 창  (cmb): ctrl+'
+3.새로 생성된 프로젝트 폴더로 이동 (link-app)
+web0826>car>cd link-app
+web0826>cra>link-app>
+4.새로 생성된 웹 브라우저로 앱 실행
+web0826>cra>link-app>npm start
